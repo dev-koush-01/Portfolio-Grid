@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Grid</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">My Portfolio</div>
+            <nav class="navbar-links">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <select id="categoryFilter" class="navbar-filter">
+                <option value="all">All Categories</option>
+                <option value="web">Web</option>
+                <option value="mobile">Mobile</option>
+                <option value="design">Design</option>
+            </select>
+            <input type="text" id="searchInput" class="navbar-filter" placeholder="Search by project name">
+        </div>
+    </header>
+    <main>
+        <div class="grid" id="portfolioGrid">
+            <!-- Projects -->
+        </div>
+    </main>
+    <div id="modal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-image" />
+    <h2 class="modal-title"></h2>
+    <p class="modal-description"></p>
+</div>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
